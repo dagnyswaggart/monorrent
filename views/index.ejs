@@ -18,7 +18,10 @@
 		  <h1><%= title %></h1> 
 	  </div>
 	  <div class="container">
-		  <button class="btn btn-info" id="add-torrent">Add Torrent</button>
+			<form action="/addtorrent" method="post">
+				<input type="text" name="infohash" placeholder="infohash" />
+				<button class="btn btn-info" type="submit" id="add-torrent">Add Torrent</button>
+			</form>
 	  </div>
   </body>
 </html>
